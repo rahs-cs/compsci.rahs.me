@@ -50,3 +50,11 @@ div.hero h1 {
 div.hero h3 {
   font-weight: normal;
 }
+
+button#nicebutton {
+  padding: 6px;
+  background-color: #0ea6ed;
+  margin: 24px;
+  border: none;
+  border-radius: 6px;
+}

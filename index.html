@@ -20,7 +20,14 @@
       </div>
     </div>
     <div class="body">
+      <button id="nicebutton" onclick="clickme()" class="button">click me!</button>
     </div>
   </div>
 </body>
+<script>
+var i = 1
+function clickme(){
+  document.getElementById('nicebutton').innerHTML = i++
+}
+</script>
 </html>
