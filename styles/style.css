@@ -41,6 +41,7 @@ div.hero {
   width: 100%;
   height: 65%;
   color: #fff;
+  transition: background-image 0.5s;
 }
 
 div.hero h1 {
