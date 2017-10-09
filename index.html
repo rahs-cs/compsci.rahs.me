@@ -20,14 +20,20 @@
       </div>
     </div>
     <div class="body">
-      <button id="nicebutton" onclick="clickme()" class="button">click me!</button>
+      <button id="nicebutton" onclick="clickMe()" class="button">click me!</button>
     </div>
   </div>
 </body>
 <script>
 var i = 1
-function clickme(){
+var bgs = ['./images/mtstars.jpg', './images/circut.jpg', './images/1.jpg', './images/2.jpg', './images/3.jpg']
+function clickMe(){
   document.getElementById('nicebutton').innerHTML = i++
 }
+
+function rotationNation(){
+  document.getElementsByClassName('hero')[0].style['background-image'] = `url('${bgs[Math.floor(Math.random() * bgs.length)]}')`
+}
+setInterval(rotationNation, 10000)
 </script>
 </html>
